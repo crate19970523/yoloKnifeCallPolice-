@@ -1,0 +1,26 @@
+<annotation>
+	<folder>JPEGImages</folder>
+	<filename>jiun3_181111_0136.jpg</filename>
+	<path>C:\pythonwork\keras-yolo3-master\VOC\JPEGImages\jiun3_181111_0136.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1774</width>
+		<height>2364</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>third</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>115</xmin>
+			<ymin>525</ymin>
+			<xmax>1488</xmax>
+			<ymax>2165</ymax>
+		</bndbox>
+	</object>
+</annotation>
