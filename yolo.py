@@ -226,22 +226,14 @@ def decectMydata():
     try:
         image = Image.open(path)#開啟圖片
     except:
-        print('等待輸入')#如果沒有圖片顯示'等待輸入'
+        print('檔案錯誤')#如果沒有圖片顯示'等待輸入'
     else:
         r_image= yolo.detect_image(image)#開始判斷
         if (anser=='knife'):#如有刀子
-            r_image.show()#開啟圖片
-            root=tk.Tk()
-            root.title("可能發生搶案")
-            if(path=='./imgtest/ltuschool.jpg'):
-                address=tk.Label(root,text="台中市南屯區嶺東路1號",font=("Arial", 64))
-                address.pack()
-                root.wm_attributes('-topmost',1)
-                root.mainloop()
+            return 'knife'
+            
             if os.path.isfile('imgtest/CallPolice.jpg'):
                 os.remove('imgtest/CallPolice.jpg')
-            # os.rename(path,'imgtest/CallPolice.jpg')#修改該圖片名稱
-
 if __name__ == '__main__':
     firstRun()
     decectMydata()

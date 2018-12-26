@@ -14,7 +14,6 @@ def get_frame():
         upload_file.save(file_path)
         print ("success")
         if not os.path.isfile('imgtest/ltuschool.jpg'):
-        	print('有近來喔')
         	os.rename('./imgtest/ltu.jpg','./imgtest/ltuschool.jpg')
         print('file saved to %s' % file_path)
         duration = time.time() - start_time
@@ -23,7 +22,7 @@ def get_frame():
     else:
         return 'failed'
 def transmission():
-    app.run("192.168.43.179", port=5000)                #Server端的IP以及port
+    app.run("10.11.3.194", port=5000)                #Server端的IP以及port
 
 if __name__ == "__main__":
     transmission()
